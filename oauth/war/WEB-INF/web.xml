@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>Servlet</servlet-name>
+    <servlet-class>com.test.Servlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>Servlet</servlet-name>
+    <url-pattern>/Servlet</url-pattern>
+  </servlet-mapping>
+  <!--  <servlet>
+    <servlet-name>oauth2callback</servlet-name>
+    <servlet-class>com.test.Oauth2callback</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>oauth2callback</servlet-name>
+    <url-pattern>/oauth2callback</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+    <servlet-name>oauth</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>oauth</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>   
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>new.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

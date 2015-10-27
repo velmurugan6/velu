@@ -1,0 +1,2 @@
+serviceClass: com.cars.client.GreetingService
+path: F4C7470F89EC9A8C5425054E5B8D5408.gwt.rpc
